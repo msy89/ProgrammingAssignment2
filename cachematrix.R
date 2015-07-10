@@ -37,5 +37,6 @@ cacheSolve <- function(x, ...) {
 ## Example
 z<-makeCacheMatrix()
 z$set(matrix(sample(1:1000,16),nrow=4,ncol=4))
-## retrieving the inverse from the cache:
+cacheSolve(z)
+## retrieving the inverse from the cache (with the message 'getting cached data'):
 cacheSolve(z)
